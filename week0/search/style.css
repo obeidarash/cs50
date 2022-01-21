@@ -1,0 +1,48 @@
+.search, .submit, .submit:hover {
+  border-radius: 20px;
+  width: 400px;
+  height: 30px;
+}
+
+.submit, .submit:hover {
+  width: 100px;
+  align-items: center;
+  background-color: white;
+  margin-left: 35%;
+  margin-top: 2%;
+}
+
+.submit:hover {
+  background-color: blue;
+  color: white;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav li {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: inline;
+}
+
+nav li:hover {
+  color: white;
+  background-color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  right: 5%;
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */
