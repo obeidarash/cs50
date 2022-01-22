@@ -1,0 +1,16 @@
+new userfull command that i learned: 
+git coomit -am "tozihat" (this is for add and commit togheter)
+git reset --hard <commit>
+git reset --hard origin/master
+git branch (see all branches)
+git checkout -b <branch-name> (make new branch)
+git checkout <branch name>
+git merge 
+
+for the first time when you make new branch and want to push to github you should use this: 
+git push --set-upstream origin <branch-name>
+
+practice things below:
+make new branches
+move betwen branches
+merge branches
