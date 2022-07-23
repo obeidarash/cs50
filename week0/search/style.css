@@ -2,10 +2,14 @@ body {
   background-color: grey;
 }
 
-.search, .submit {
+.search, .sub, .submit, .advanced_btn, .advanced {
   border-radius: 5px;
   width: 400px;
   height: 30px;
+}
+
+.advanced {
+  margin-bottom: 5px;
 }
 
 .center h1 {
@@ -15,7 +19,7 @@ body {
   margin: 0;
 }
 
-.submit {
+.submit, .sub, .advanced_btn {
   width: 100px;
   align-items: center;
   background-color: white;
@@ -48,12 +52,16 @@ nav ul {
   position: absolute;
 }
 
-.submit, a {
+.submit, .sub, .advanced_btn, a {
   color: white;
 }
 
 input {
   border: 0px;
+}
+
+.sub {
+  display: inline;
 }
 
 /*# sourceMappingURL=style.css.map */

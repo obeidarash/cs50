@@ -10,6 +10,11 @@ body {
     height: 30px;
 }
 
+.advanced {
+    @extend .search;
+    margin-bottom: 5px;
+}
+
 .center h1 {
     color: white;
     text-align: center;
@@ -26,6 +31,12 @@ body {
     margin-top: 2%;
     background-color: $background_color;
     border: none;
+}
+
+
+
+.advanced_btn {
+    @extend .submit;
 }
 
 .center {
@@ -57,4 +68,9 @@ nav ul{
 
 input {
     border: 0px;
+}
+
+.sub {
+    @extend .search, .submit;
+    display: inline;
 }

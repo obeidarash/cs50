@@ -9,14 +9,24 @@
 <body>
     <nav>
         <ul>
-            <li><a href="./index.html">Google Search</a></li>
-            <li><a href="./advanced.html">Advanced Search</a></li>
+            <li><a href="./index.html">Home</a></li>
         </ul>
     </nav>
     <div class="center">
         <h1>
-            Advance
+            Google
         </h1>
+        <form action="https://www.google.com/search">
+            <input type="text" name="as_q" id="as_q" class="advanced" placeholder="all these words">
+            <br>
+            <input type="text" name="as_epq" id="as_epq" class="advanced"  placeholder="this exact word or phrase:">
+            <br>
+            <input type="text" name="as_oq" id="as_oq" class="advanced" placeholder="any of these words">
+            <br>
+            <input type="text" name="as_eq" id="as_eq" class="advanced" placeholder="none of these words">
+            <br>
+            <button  class="advanced_btn">Advanced Search</button>
+        </form>
     </div>
 </body>
 
