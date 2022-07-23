@@ -1,8 +1,10 @@
-.test{
-    display: block;
+.test {
     background-color: black;
     color: white;
-    border: 10px solid #ffc0cb;
-    padding: 50px;
-    margin: 60px;
+    font-size: 50px;
+    display: block;
+    margin: 50px;
+    padding: 20px;
+    border: solid 60px; 
+    border-color: pink;
 }
