@@ -4,3 +4,11 @@ How to add custom font in html or css
 
 studdy about usefull attrs:
 margin, padding, border, display and ETC
+
+
+
+insatll bootstrap with this cod: 
+npm install bootstrap@v5.2.0
+
+convert sass to css:
+sass --watch custom.scss:custom.css
