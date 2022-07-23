@@ -1,12 +1,21 @@
-$background_color: black;
+$background_color: #4285F4;
 
+body {
+    background-color: grey;
+}
 
 .search {
-    border-radius: 20px;
+    border-radius: 5px;
     width: 400px;
     height: 30px;
 }
- 
+
+.center h1 {
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    margin: 0;
+}
 
 .submit {
     @extend .search;
@@ -15,12 +24,8 @@ $background_color: black;
     background-color: white;
     margin-left: 35%;
     margin-top: 2%;
-}
-
-.submit:hover {
-    @extend .submit;
-    background-color: blue;
-    color: white;
+    background-color: $background_color;
+    border: none;
 }
 
 .center {
@@ -32,14 +37,9 @@ $background_color: black;
 
 nav li {
     padding: 10px;
-    border: 2px solid black;
     border-radius: 10px;
     display: inline;
-}
-
-nav li:hover {
-    color: white;
-    background-color: blue;
+    background-color: $background_color;
 }
 
 a {
@@ -49,4 +49,12 @@ a {
 nav ul{
     right: 5%;
     position: absolute;
+}
+
+.submit, a{
+    color: white;
+}
+
+input {
+    border: 0px;
 }

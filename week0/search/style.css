@@ -1,20 +1,28 @@
-.search, .submit, .submit:hover {
-  border-radius: 20px;
+body {
+  background-color: grey;
+}
+
+.search, .submit {
+  border-radius: 5px;
   width: 400px;
   height: 30px;
 }
 
-.submit, .submit:hover {
+.center h1 {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  margin: 0;
+}
+
+.submit {
   width: 100px;
   align-items: center;
   background-color: white;
   margin-left: 35%;
   margin-top: 2%;
-}
-
-.submit:hover {
-  background-color: blue;
-  color: white;
+  background-color: #4285F4;
+  border: none;
 }
 
 .center {
@@ -26,14 +34,9 @@
 
 nav li {
   padding: 10px;
-  border: 2px solid black;
   border-radius: 10px;
   display: inline;
-}
-
-nav li:hover {
-  color: white;
-  background-color: blue;
+  background-color: #4285F4;
 }
 
 a {
@@ -43,6 +46,14 @@ a {
 nav ul {
   right: 5%;
   position: absolute;
+}
+
+.submit, a {
+  color: white;
+}
+
+input {
+  border: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
