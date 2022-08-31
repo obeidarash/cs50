@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <button onclick="hello()">Click</button>
-
-
-    <script>
-        
-        function hello(){
-            const heading = document.querySelector('h1')
-            if(heading.innerHTML == 'Hello, World!') {
-                heading.innerHTML = 'Goodbye'
-            } else {
-                heading.innerHTML = 'Hello, World!'
-            }
-        }
-
-    </script>
-
-
-</body>
+    <head>
+        <title>Hello!</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                document.querySelector('form').onsubmit = function(e) {
+                    e.preventDefault()
+                    const name = document.querySelector('#name').value
+                    alert(`Hello, ${name}`)
+                }
+            })
+        </script>
+    </head>
+    <body>
+   
+        <form>
+            <input autofocus id="name" placeholder="Name" type="text">
+            <input type="submit">
+        </form>
+    </body>
 </html>

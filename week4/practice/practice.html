@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Practice</title>
+    </head>
+    <body id="test">
+        <script>
+            count = 0
+           document.addEventListener('DOMContentLoaded', function(){
+                document.querySelector('html').onmousemove = function(){
+                    count++
+                    document.querySelector('h1').innerHTML = count
+                }
+           })
+        </script>
+   <h1>Hello</h1>
+
+        <button id="btn">Count</button>
+     
+    </body>
+</html>

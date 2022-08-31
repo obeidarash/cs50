@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do App</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=> {
+            const newTask = document.querySelector('#task')
+            const submit = document.querySelector('#submit')
+            submit.disabled = true
+
+            newTask.onkeyup = ()=> {
+                if (newTask.value.length > 0){
+                submit.disabled = false
+            } else {
+                submit.disabled = true
+            }}
+
+            document.querySelector('form').onsubmit = ()=>{
+                
+                const task = newTask.value
+                const li = document.createElement('li')
+                li.innerHTML = task
+                document.querySelector('#tasks').append(li)
+
+                newTask.value = ''
+                submit.disabled = true
+                return false
+            }
+            
+        })
+    </script>
+
+<form>
+    <input type="text" id="task" placeholder="Enter your task" autofocus>
+    <button type="submit" id="submit">Add</button>
+</form>
+    <h1>Tasks</h1>
+
+    <ul id="tasks"></ul>
+    
+</body>
+</html>
