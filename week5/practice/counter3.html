@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Count</title>
+        <script>
+        
+            counter = 0;
+            min = 0
+            setInterval(()=>{ 
+                counter++
+                if (counter % 60 === 0) {
+                    min++
+                    counter = 0
+                }
+            document.querySelector('#s').innerHTML = counter;
+            document.querySelector('#m').innerHTML = min;
+            }, 1000)
+        </script>
+    </head>
+    <body>
+        <button id="btn">Start</button>
+        <p id="m">0</p>
+        <p id="s">0</p>
+    </body>
+</html>
